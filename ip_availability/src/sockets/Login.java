@@ -13,8 +13,10 @@ public class Login extends CommandHandler {
 	String date = sdf.format(new Date());
 	
 	public String login() {
+		User user = new User(line[0], true, date, 1);
+		
 		if(!users.containsKey(line[0])) {
-			users.put(line[0], new User(line[0], true, datesVisited.add(date)));
+			users.put(line[0], user);
 			
 		}
 		return "ok";

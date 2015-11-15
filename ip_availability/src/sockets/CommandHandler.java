@@ -19,7 +19,7 @@ public class CommandHandler {
 			return new Login(line).login();
 		break;
 		case "info":
-			return new Info(line);
+			return new Info(line).info();
 		break;	
 
 		default: 
