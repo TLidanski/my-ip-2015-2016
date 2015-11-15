@@ -46,10 +46,10 @@ public class ClientHandle implements Runnable {
 	
 	public void stopClient() throws IOException {
 		socket.close();
-		// TODO add variable closed
+		
 	}
 	
-	private static String[] parse(String command){
+	private String[] parse(String command){
 		final String[] split = command.split(":");
 		
 		return split;		
