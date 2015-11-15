@@ -21,8 +21,14 @@ public class CommandHandler {
 		case "info":
 			return new Info(line).info();
 		break;	
-
-		default: 
+		case "logout":
+			return new Logout(line).logout();
+		break;	
+		case "listabsent":
+			return new ListAbsent(line).listAbsent();
+		break;	
+			
+		default: return new Default(line).def();
 			break;
 		}
 	}

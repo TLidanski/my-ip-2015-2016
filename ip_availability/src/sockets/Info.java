@@ -19,8 +19,7 @@ public class Info extends CommandHandler {
 				return "ok:" + name + ":" + in + ":" + timesVisited + ":" + datesVisited;
 			} else {
 				return "error:user2notlogged";
-			}
-			
+			}			
 		} else {
 			return "error:notlogged";
 		}
