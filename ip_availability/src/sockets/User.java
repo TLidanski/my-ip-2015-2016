@@ -17,6 +17,14 @@ public class User {
 		this.timesVisited += timesVisited;
 	}
 
+	public void setIn(boolean in) {
+		this.in = in;
+	}
+
+	public void setDatesVisited(String datesVisited) {
+		this.datesVisited.add(datesVisited);
+	}
+
 	public Integer getTimesVisited() {
 		return timesVisited;
 	}

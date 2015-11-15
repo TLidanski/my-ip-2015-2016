@@ -17,9 +17,10 @@ public class Info extends CommandHandler {
 				String name = userInfo.getName();
 				String datesVisited = datesToString(userInfo.getDatesVisited());
 				return "ok:" + name + ":" + in + ":" + timesVisited + ":" + datesVisited;
+			} else {
+				return "error:user2notlogged";
 			}
 			
-			return "";
 		} else {
 			return "error:notlogged";
 		}
