@@ -17,19 +17,19 @@ public class CommandHandler {
 		switch (line[1]) {
 		case "login":
 			return new Login(line).login();
-		break;
+		
 		case "info":
 			return new Info(line).info();
-		break;	
+		
 		case "logout":
 			return new Logout(line).logout();
-		break;	
+		
 		case "listabsent":
 			return new ListAbsent(line).listAbsent();
-		break;	
+		
 			
 		default: return new Default(line).def();
-			break;
+		
 		}
 	}
 }
